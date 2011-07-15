@@ -5,7 +5,7 @@ import itertools as it
 import operator as op
 
 # mapping cijfers <-> letters
-conv.update(zip(range(26+1), ' ' + string.uppercase))
+conv.update(zip(range(27), ' ' + string.uppercase))
 conv.update([v, k for k, v in conv.items()])
 
 def line():
@@ -24,7 +24,7 @@ def cipher(oper):
     return ''.join(sol)
 
 def main():
-    for i in range(2): 
+    for i in range(2): # 1x encoden, 1x decoden
         n = int(line())
         for _ in range(n):
             print cipher(op.sub if i else op.add)
