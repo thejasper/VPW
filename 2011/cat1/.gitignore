@@ -1,2 +1,2 @@
-*.input  # no input files
-*.output # no output files
+./*.input  # no input files
+./*.output # no output files
