@@ -15,9 +15,8 @@ def main():
         line() # niet nodig
         res = line().split() 
         val = map(int, line().split())
-        bord = zip(res, val)
         produce = co.defaultdict(int)
-        for r, v in bord:
+        for r, v in zip(res, val):
             produce[r] += chance[v]
         res = sorted(produce.items(), key=lambda x: (x[1], res.count(x[0])))
         print res[0][0]
