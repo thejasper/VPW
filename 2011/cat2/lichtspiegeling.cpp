@@ -65,7 +65,7 @@ int check(string *a)
 
 int main()
 {
-    freopen("wedstrijd.input", "r", stdin);
+    //freopen("wedstrijd.input", "r", stdin);
 
     int ncases;
     cin >> ncases;
