@@ -84,7 +84,7 @@ vi get_results(vi& p)
 
 int main()
 {
-    freopen("input.txt", "r", stdin);
+    //freopen("input.txt", "r", stdin);
 
     int n;
     cin >> n;
